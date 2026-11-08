@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My Ebook</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/page-flip/dist/js/page-flip.browser.js"></script>
+    <style>
+      body {
+        background: linear-gradient(to right, #79eaf4, #aeb6f4);
+        text-align: center;
+        font-family: Arial;
+      }
+
+      #book {
+        margin: 30px auto;
+      }
+
+      .page {
+        background: white;
+        border: 1px solid black;
+        border-radius: 20px;
+        width: 400px;
+        padding: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="book">
+      <div class="page">
+        <h1>Bìa sách</h1>
+      </div>
+
+      <div class="page">
+        <h1>Mục lục</h1>
+      </div>
+
+      <div class="page">
+        <h1>Lý thuyết</h1>
+      </div>
+
+      <div class="page">
+        <h1>Bài tập</h1>
+      </div>
+
+      <div class="page">
+        <h1>Kết thúc</h1>
+      </div>
+    </div>
+
+    <br />
+    <button
+      style="
+        padding: 10px 20px;
+        font-weight: bold;
+        font-size: 16px;
+        border-radius: 5px;
+      "
+      onclick="book.flipPrev()"
+    >
+      Trước
+    </button>
+    <button
+      style="
+        padding: 10px 20px;
+        font-weight: bold;
+        font-size: 16px;
+        border-radius: 5px;
+      "
+      onclick="book.flipNext()"
+    >
+      Sau
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
